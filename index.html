@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Years</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Subtle film grain overlay -->
+    <div class="grain-overlay"></div>
+
+    <!-- Section I: The Arrival -->
+    <section class="arrival">
+        <div class="content fade-up slow">
+            <div class="heart-pulse"></div>
+            <p class="script-text hero-text">Two years.</p>
+            <p class="sans-text">A collection of our quietest, loudest, and most loved moments.</p>
+            <span class="scroll-indicator script-text">scroll gently por favor</span>
+        </div>
+    </section>
+
+    <!-- Section II: The First Pages -->
+    <section class="first-pages">
+        <div class="ghost-text script-text">How time flies</div>
+        <div class="container staggered-grid">
+            <div class="photo-frame fade-up left-tilt">
+                <img src="images/first-date.jpg" alt="Our first date" class="placeholder landscape">
+                <p class="script-text caption">Where it all started...</p>
+            </div>
+            <div class="photo-frame fade-up right-tilt delay-1">
+                <img src="images/last-trip.HEIC" alt="Our last trip" class="placeholder landscape">
+                <p class="script-text caption">Our last trip!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section III: The Scrapbook of Sundays -->
+    <section class="scrapbook">
+        <div class="ghost-text script-text">Weekends with you</div>
+        <div class="container scattered-layout">
+            <div class="photo-frame fade-up small-frame tilt-1">
+                <img src="images/grad-1.jpg" class="placeholder square">
+                <p class="script-text caption">You old.</p>
+            </div>
+            <div class="photo-frame fade-up medium-frame tilt-2 delay-1">
+                <img src="images/photo.JPG" class="placeholder portrait">
+                <p class="script-text caption">Fav photographer.</p>
+            </div>
+            <div class="photo-frame fade-up small-frame tilt-3 delay-2">
+                <img src="images/grad-2.jpg" class="placeholder square">
+                <p class="script-text caption">I'm old too..</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section IV: The Golden Hour -->
+    <section class="golden-hour">
+        <div class="container">
+            <div class="hero-frame fade-up slow">
+                <img src="images/view.HEIC" alt="Our first date" class="placeholder cinematic">
+                <p class="script-text overlay-caption">My favorite view</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section V: The Final Declaration -->
+    <section class="crescendo">
+        <div class="falling-petals" id="petals-container"></div>
+        <div class="content fade-up slow">
+            <p class="sans-text closing-body">Thanks for sharing a part of your journey with me.</p>
+            <p class="script-text signature">I love you.</p>
+            <button class="cta-button sans-text" onclick="revealSurprise()">Enjoyed this website?</button>
+            <div id="surprise-message" class="hidden script-text surprise-text">
+                Vibe coded with yours truly, Gemini
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
