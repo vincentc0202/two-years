@@ -300,3 +300,32 @@ section {
     .hero-text { font-size: 3rem; }
     .ghost-text { font-size: 4rem; }
 }
+
+/* --- Floating Side Notes --- */
+.side-note {
+    position: absolute;
+    top: 30%; /* Moves it up or down the side of the photo */
+    right: -170px; /* Pushes it outside the right edge of the white frame */
+    font-size: 2.5em;
+    color: var(--terracotta);
+    transform: rotate(6deg); /* Gives it a slightly messy, hand-placed tilt */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 5;
+    pointer-events: none; /* Prevents it from interfering with scrolling */
+}
+
+.side-note .arrow {
+    font-size: 2.5rem;
+    line-height: 1;
+    transform: translateY(-5px); /* Nudges the arrow up slightly to align with the text */
+    transform: translateX(5px);
+}
+
+/* Hide it on mobile so it doesn't get cut off off-screen */
+@media (max-width: 768px) {
+    .side-note {
+        display: none;
+    }
+}
